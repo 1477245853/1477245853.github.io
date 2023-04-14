@@ -1,94 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-      background: url('https://img1.baidu.com/it/u=4049022245,514596079&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500.jpg') no-repeat;
-      background-size: 100% 130%;
-    }
-
-    #login_box {
-      width: 20%;
-      height: 400px;
-      background-color: #00000060;
-      margin: auto;
-      margin-top: 10%;
-      text-align: center;
-      border-radius: 10px;
-      padding: 50px 50px;
-    }
-
-    h2 {
-      color: #ffffff90;
-      margin-top: 5%;
-    }
-
-    #input-box {
-      margin-top: 5%;
-    }
-
-    span {
-      color: #fff;
-    }
-
-    input {
-      border: 0;
-      width: 60%;
-      font-size: 15px;
-      color: #fff;
-      background: transparent;
-      border-bottom: 2px solid #fff;
-      padding: 5px 10px;
-      outline: none;
-      margin-top: 10px;
-    }
-
-    button {
-      margin-top: 50px;
-      width: 60%;
-      height: 30px;
-      border-radius: 10px;
-      border: 0;
-      color: #fff;
-      text-align: center;
-      line-height: 30px;
-      font-size: 15px;
-      background-image: linear-gradient(to right, #30cfd0, #330867);
-    }
-
-    #sign_up {
-      margin-top: 45%;
-      margin-left: 60%;
-    }
-
-    a {
-      color: #b94648;
-    }
-  </style>
+<style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: rgb(10, 158, 133);
+        }
+        
+        .login {
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        .login ul li input[type=text],
+        .login ul li input[type=password] {
+            font-size: 16px;
+        }
+        
+        .login ul li input {
+            width: 275px;
+            height: 40px;
+            margin-top: 20px;
+        }
+        
+        .login ul li input[type=button] {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
 </head>
 
 <body>
-  <div id="login_box">
-    <h2>LOGIN</h2>
-    <div id="input_box">
-      <input type="text" placeholder="请输入用户名">
-    </div>
-    <div class="input_box">
-      <input type="password" placeholder="请输入密码">
-    </div>
-    <div id="form-border">
-			<form method="post">
-				<div id="img-control">
-					<img src="img/01.png" id="login-img"/>
-				</div>
-				<label id="register" class="form-label" for="password">没有账号？<a href="register.html">点击注册</a></label><br>
-			</form>
-		</div>
-    <button>登录</button><br>
-  </div>
+    <form class="login">
+        <h2>登录</h2>
+        <ul>
+            <li>
+                用户名：<input type="text">
+            </li>
+            <li>
+                密&emsp;码：<input type="password">
+            </li>
+            <li><input type="button" value="登录"></li>
+            <li>还没有账号？<a href="注册.html">点击注册</a></li>
+        </ul>
+    </form>
 </body>
-</html>
